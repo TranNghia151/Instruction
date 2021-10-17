@@ -1,0 +1,549 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html, body{
+    font-family: 'Noto Sans SC', sans-serif;
+} */
+header{
+    background-color: #FF4F81;
+    color: white;
+}
+.header-left{
+    font-size: 14px;
+    align-items: center;
+}
+.header-active{
+    transition: all .5s;
+}
+.header-right i{
+    width: 30px;
+    font-size: 15px;
+    padding: 6px 0;
+    margin-left: 4px;
+    text-align: center;
+    background-color: #333333;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+.header-active:hover{
+    color: turquoise;
+}
+.header-right i:hover{
+    background-color: #FF4F81;
+    border: 1px solid white;
+}
+.navbar .navbar-brand h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 0;
+}
+.navbar .navbar-brand h1 i{
+    font-size: 30px;
+}
+.navbar .navbar-brand p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #FF4F81;
+    margin-top: -5px;
+}
+.navbar-toggler{
+    background-color: #FF4F81;
+
+}
+
+.navbar-nav .nav-item{
+    margin-left: 20px;
+    
+}
+.navbar-nav .nav-item .nav-link{
+    color: #161616;
+    font-weight: 500;
+    transition: all .5s;
+}
+.navbar-nav .nav-item.active .nav-link{
+    color: #FF4F81;
+}
+.navbar-nav .nav-item.active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #FF4F81;
+}
+.navbar-nav .nav-item::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: #FF4F81;
+    transition: all .5s;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color:#FF4F81 ;
+}
+.navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+.nav-item.dropdown .dropdown-menu{
+    background-color:rgba(0, 0, 0, 0.65);
+}
+.nav-item.dropdown .dropdown-menu .dropdown-item{
+    color: white;
+    transition: all .5s;
+}
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover{
+    color:#FF4F81 ;
+    text-decoration: none;
+    background-color: rgba(245, 245, 245, 0);
+}
+
+.carousel-caption{
+    bottom: 30%;
+}
+.carousel-caption h5{
+    font-size: 40px;
+    font-weight: 500;
+  
+    letter-spacing: 2px;
+
+}
+.carousel-caption p{
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-caption .btn{
+    border-radius: 0px;
+    transition: all .5s;
+}
+.carousel-caption .btn i{
+    font-size: 10px;
+}
+.carousel-caption .btn:hover{
+    background-color: #FF4F81;
+    color: white;
+}
+.modal-dialog .modal-content .modal-intro h2{
+    color:#FF4F81 ;
+    float: left;
+    margin-left: 10px;
+}
+.modal-dialog .modal-content .modal-body{
+    color: rgb(185, 184, 184);
+    font-size: 15px;
+    font-weight: normal;
+
+} 
+
+.welcome{
+    padding: 50px;
+}
+.welcome-title h1{
+    color: #FF4F81;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-top: 100px;
+}
+.welcome-title span{
+    color: rgb(29, 28, 28);
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+.welcome-title p{
+    color: #999;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    width: 80%;
+    margin: 20px auto;
+}
+.welcome__line{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+.card{
+   border-radius: 0px;
+}
+.card-content{
+    padding: 20px;
+}
+.card .card-content i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.card .card-content h2{
+    font-size: 27px;
+    font-weight: 700;
+    color:#FF4F81 ;
+    line-height: 2;
+}
+.card .card-content h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+}
+.card .card-content p{
+    font-size: 14px;
+    color: #999;
+}
+
+.start{
+    height: 100%;
+    min-height: 500px;
+    background-image: url('../img/banner2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.start-title h1{
+    color: #FF4F81;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-top: 100px;
+}
+.start-title span{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+.start__line{
+    width: 80px;
+    height: 2px;
+    background-color: rgb(31, 30, 30);
+}
+.start-content i{
+    font-size: 35px;
+    color: white;
+    padding: 30px
+}
+.start-content h2{
+    color:#FF4F81 ;
+    font-size:22px;
+    letter-spacing: 3px;
+}
+.start-content p{
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    
+}
+.offer{
+    padding: 50px;
+}
+.offer-title h1{
+    color: #FF4F81;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-top: 60px;
+}
+.offer-title span{
+    color: black;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+.offer__line{
+    width: 80px;
+    height: 2px;
+    background-color: rgb(31, 30, 30);
+}
+.offer-content{
+    box-shadow: 0px 1px 7px 0px #999;
+    padding: 10px;
+    margin-bottom: 30px;
+    transition: all .5s;
+
+}
+.offer-content:hover{
+    background-color: #12ccc3;
+}
+.offer-content i{
+    font-size: 35px;
+    color: #FF4F81;
+    padding: 20px 0;
+}
+.offer-content h2{
+    font-size: 18px;
+    color: black ;
+    font-weight: 500;
+
+}
+.offer-content p{
+    font-size: 16px;
+    color:rgb(82, 80, 80);
+}
+.testimonials{
+    min-height: 500px;
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.testimonials-title h1{
+    color: #FF4F81;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-top: 60px;
+}
+.testimonials-title span{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.testimonials-slider{
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.47); 
+    box-shadow: 0px 0px 2px 1px #8e8e8e;
+    padding: 30px;
+}
+.item__detail{
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+.item__detail::after{
+    content: '';
+    border-top: 9px solid rgba(0, 0, 0, 0.65);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    bottom: -9px;
+    left:27%;
+}
+.item__user {
+    margin-left: 27%;
+    margin-bottom: 30px;
+}
+.item .item__user img{
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-right: 10px;
+}
+.item__user p{
+    margin-bottom: 0;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.item__user span{
+    color: #FF4F81;
+    font-size: 15px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #FF4F81;
+}
+.event-item img{
+    max-width: 100%;
+    height: auto;
+    border: solid #dedede;
+}
+
+.event-item h1{
+    font-size: 22px;
+    font-weight: bold;
+    transition: all .5see;
+}
+.event-content .event-item h1:hover{
+    color: #FF4F81;
+
+}
+.event-content .event-item span{
+    color: #FF4F81;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.event-item p{
+    font-size: 15px;
+    color: #8e8e8e;
+}
+.footer-detail{
+	background-color: #141415;
+	padding:3rem 15px;
+}
+.footer-detail h2{
+	color:#ff4f81;
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-bottom:20px;
+}
+.footer-detail p{
+	color:#8b8b96;
+	font-size:14px;
+	margin-bottom: 10px;
+}
+.footer__news p i{
+	color:#ff4f81;
+	margin-right:10px;
+}
+.footer__contact i{
+	width:30px;
+	height:30px;
+	text-align: center;
+	padding-top:5px;
+	font-size:15px;
+	color: white;
+	border:1px solid #4b4b50;
+}
+.footer__contact p span{
+	margin-left:10px;
+}
+
+.footer__form h2{
+	font-size:20px;
+	font-weight: 600;
+}
+.footer__form input {
+	height:40px;
+	width:70%;
+}
+.btn-footer-submit{
+	background-color: #ff4f81;
+	border-radius: 0px;
+	height: 40px;
+	margin-top:-6px;
+	cursor:pointer;
+	width:25%;
+}
+.btn-footer-submit:hover{
+	background-color: #ec1955;
+}
+.copy-right{
+	background-color: #0f0f10;
+}
+.copy-right p span{
+	color:#ff4f81;
+}
+/* responsive */
+@media screen and (max-width:768px){
+    .navbar-collapse{
+        background-color:#EEEEEE ;
+        margin: 20px;
+    }
+    .navbar-collapse .navbar-nav{
+        text-align: center;
+    }
+    .nav-item.dropdown .dropdown-menu{
+        background-color:#E0E1E2 ;
+    }
+    .nav-item.dropdown .dropdown-menu .dropdown-item{
+        text-align: center;
+        color:gray ;
+    }
+
+}
+@media screen and (max-width: 992px){
+    .navbar-nav .nav-item{
+        margin-left: 0;
+        
+    }
+    .navbar .navbar-brand h1{
+        font-size: 25px;
+    }
+    .navbar .navbar-brand p{
+        font-size: 10px;
+        
+    }
+    .navbar .navbar-brand h1 i{
+        font-size: 22px;
+    } 
+    
+
+}
+@media screen and (min-width: 500px)and (max-width: 768px){
+    .carousel-caption{
+        bottom: 0;
+        padding-top:500px;
+    }
+        
+    .carousel-caption h5{
+        font-size:5px ;
+        font-weight: normal;
+        
+    }
+    .carousel-caption p{
+        letter-spacing: 1px;
+        font-size: 2px;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+    .carousel-indicators {
+        bottom: 0%;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    .carousel-caption{
+        bottom: 17%;
+    }
+        
+    .carousel-caption h5{
+        font-size:25px ;
+        font-weight: normal;
+        
+    }
+    .carousel-caption p{
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+    .carousel-indicators {
+        bottom: 0%;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width: 768px){
+    .carousel-caption{
+        bottom: 25%;
+    }
+        
+    .carousel-caption h5{
+        font-size:30px ;
+        font-weight: normal;
+        
+    }
+    .carousel-caption p{
+        letter-spacing: 1px;
+        font-size: 1px;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+    .carousel-indicators {
+        bottom: 0%;
+    }
+    .card .card-content h2{
+        font-size: 16px;
+    }
+    .card .card-content h3{
+        font-size: 10px;
+    }
+    .card .card-content p{
+        font-size: 8px;
+    }
+}
